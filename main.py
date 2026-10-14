@@ -18,7 +18,8 @@ while True:
     print("Try another?")
     while True:
         ask = input("Please enter yes or no (Y/N): ")
-        if ask != "Y" and ask != "y" and ask != "Yes" and ask != "yes" and ask == "YES" and ask != "No" and ask != "no" and ask != "n" and ask != "N" and ask != "NO":
+        ask.lower()
+        if ask != "y" and ask != "yes" and ask != "no" and ask != "n":
             print("Invalid input, please try again")
         else:
             break

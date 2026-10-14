@@ -12,7 +12,7 @@ while True:
         print("Please enter a valid month")
         continue
     elif year < 1:
-        print("Please enter a valid year")
+        print("Do not enter a BC year")
         continue
     calendar_output(month, year)
     print("Try another?")

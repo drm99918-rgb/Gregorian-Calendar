@@ -23,7 +23,7 @@ while True:
             print("Invalid input, please try again")
         else:
             break
-    if ask == "Y" or ask == "y" or ask == "Yes" or ask == "yes" or ask == "YES":
+    if ask == "y" or ask == "yes":
         continue
     else:
         print("**************Program Ended**************")

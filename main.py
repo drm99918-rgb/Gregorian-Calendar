@@ -1,7 +1,7 @@
 from calendar_output import calendar_output
 
 print()
-print("*******Gregorian Calendar Calculator*******")#41 chrs
+print("*******Gregorian Calendar Calculator*******")
 while True:
     try:
         month, year = map(int, input("Please enter your month and year (M/Y) in numbers: ").split('/'))

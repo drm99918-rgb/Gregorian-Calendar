@@ -6,7 +6,7 @@ while True:
     try:
         month, year = map(int, input("Please enter your month and year (M/Y) in numbers: ").split('/'))
     except ValueError:
-        print("Type in integers in M/Y form only")
+        print("Type in positive integers in M/Y form only")
         continue
     if month < 1 or month > 12:
         print("Please enter a valid month")

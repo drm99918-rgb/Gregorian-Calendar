@@ -19,7 +19,7 @@ while True:
     while True:
         ask = input("Please enter yes or no (Y/N): ")
         if ask != "Y" and ask != "y" and ask != "Yes" and ask != "yes" and ask != "No" and ask != "no" and ask != "n" and ask != "N":
-            print("Please enter yes or no")
+            print("Invalid input, please try again")
         else:
             break
     if ask == "Y" or ask == "y" or ask == "Yes" or ask == "yes":

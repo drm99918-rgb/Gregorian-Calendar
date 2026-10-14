@@ -6,5 +6,8 @@ while True:
     if month < 1 or month > 12:
         print("Please enter a valid month")
         continue
+    elif year < 1:
+        print("Please enter a valid year")
+        continue
     calendar_output(month, year)
     break

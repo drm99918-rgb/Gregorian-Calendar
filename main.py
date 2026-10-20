@@ -1,4 +1,5 @@
 from calendar_output import calendar_output
+from calendar_output_bc import calendar_output_bc
 
 print()
 print("*******Gregorian Calendar Calculator*******")
@@ -11,10 +12,13 @@ while True:
     if month < 1 or month > 12:
         print("Please enter a valid month")
         continue
-    elif year < 1:
+    elif year == 0:
         print("Do not enter a BC year")
         continue
-    calendar_output(month, year)
+    if year > 0:
+        calendar_output(month, year)
+    else:
+        calendar_output_bc(month, year)
     print("Try another?")
     while True:
         ask = input("Please enter yes or no (Y/N): ")

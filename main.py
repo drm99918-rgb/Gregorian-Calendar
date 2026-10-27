@@ -1,5 +1,5 @@
-from calendar_output import calendar_output
-from calendar_output_bc import calendar_output_bc
+from calendar_output_g import calendar_output_g
+from calendar_output_bc_g import calendar_output_bc_g
 
 print()
 print("*******Gregorian Calendar Calculator*******")
@@ -16,9 +16,9 @@ while True:
         print("Do not enter a BC year")
         continue
     if year > 0:
-        calendar_output(month, year)
+        calendar_output_g(month, year)
     else:
-        calendar_output_bc(month, year)
+        calendar_output_bc_g(month, year)
     print("Try another?")
     while True:
         ask = input("Please enter yes or no (Y/N): ")

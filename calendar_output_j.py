@@ -2,7 +2,7 @@ from find_the_first_day_j import find_the_first_day_j
 from leap_year_j import leap_year_j
 
 
-def calendar_output_g(month, year):
+def calendar_output_j(month, year):
     mon_name = {1: "Ianuarius", 2: "Februarius", 3: "Martius", 4: "Aprilis", 5: "Maius", 6: "Iunius", 7: "Quintilis", 8: "Sextilis",
                 9: "September", 10: "October", 11: "November", 12: "December"}
     print(year)

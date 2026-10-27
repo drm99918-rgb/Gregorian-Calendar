@@ -1,34 +1,40 @@
-from calendar_output_g import calendar_output_g
-from calendar_output_bc_g import calendar_output_bc_g
+from main_f_g import main_g
+from main_f_j import main_j
 
 print()
-print("*******Gregorian Calendar Calculator*******")
+type_calendar = input("Please enter the type of calendar: ")
+type_calendar.lower()
 while True:
-    try:
-        month, year = map(int, input("Please enter your month and year (M/Y) in numbers: ").split('/'))
-    except ValueError:
-        print("Type in positive integers in M/Y form only")
-        continue
-    if month < 1 or month > 12:
-        print("Please enter a valid month")
-        continue
-    elif year == 0:
-        print("Do not enter a BC year")
-        continue
-    if year > 0:
-        calendar_output_g(month, year)
-    else:
-        calendar_output_bc_g(month, year)
-    print("Try another?")
-    while True:
-        ask = input("Please enter yes or no (Y/N): ")
-        ask.lower()
-        if ask != "y" and ask != "yes" and ask != "no" and ask != "n":
+    match type_calendar:
+        case "j" | "julian" | "julian calendar":
+            main_j()
+            while True:
+                ask = input("Do you want to try another calendar? (Y/N): ")
+                ask.lower()
+                if ask != "y" and ask != "yes" and ask != "no" and ask != "n":
+                    print("Invalid input, please try again")
+                else:
+                    break
+            if ask == "y" or ask == "yes":
+                type_calendar = "g"
+                continue
+            else:
+                break
+        case "g" | "gregorian" | "gregorian calendar":
+            main_g()
+            while True:
+                ask = input("Do you want to try another calendar? (Y/N): ")
+                ask.lower()
+                if ask != "y" and ask != "yes" and ask != "no" and ask != "n":
+                    print("Invalid input, please try again")
+                else:
+                    break
+            if ask == "y" or ask == "yes":
+                type_calendar = "j"
+                continue
+            else:
+                break
+        case _:
             print("Invalid input, please try again")
-        else:
-            break
-    if ask == "y" or ask == "yes":
-        continue
-    else:
-        print("**************Program Ended**************")
-        break
+            continue
+print("**************Program Ended**************")

@@ -1,7 +1,6 @@
 from calendar_output_j import calendar_output_j
 
 
-
 def main_j():
     print()
     print("*******Julian Calendar Calculator********")

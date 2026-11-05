@@ -16,6 +16,6 @@ def find_the_first_day_j(year, month):
     else:
         for i in range(month - 1):
             ans += mon[i + 1]
-    ans += 1
+    ans -= 1
     ans %= 7
     return ans

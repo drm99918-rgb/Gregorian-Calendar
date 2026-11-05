@@ -17,7 +17,7 @@ def main_j():
             print("Please enter a valid year")
             continue
         if year > 0:
-            calendar_output_j(month, year)
+            calendar_output_j(year, month)
         print("Try another?")
         while True:
             ask = input("Please enter yes or no (Y/N): ")

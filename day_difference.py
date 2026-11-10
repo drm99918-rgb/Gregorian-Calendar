@@ -14,6 +14,6 @@ def day_difference(year):
                 ans += 1
     elif year < 200:
         for i in range(year, 200):
-            if (leap_year_j(i) and (not leap_year_bc_j(i))) or (leap_year_bc_j(i) and (not leap_year_bc_g(i))):
+            if (leap_year_j(i) and (not leap_year_g(i))) or (leap_year_bc_j(i) and (not leap_year_bc_g(i))):
                 ans -= 1
     return ans

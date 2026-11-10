@@ -8,7 +8,7 @@ def main_g():
         try:
             month, year = map(int, input("Please enter your month and year (M/Y) in numbers (negative integers for BC years) : ").split('/'))
         except ValueError:
-            print("Type in positive integers in M/Y form only")
+            print("Type in integers in M/Y form only")
             continue
         if month < 1 or month > 12:
             print("Please enter a valid month")
@@ -23,7 +23,7 @@ def main_g():
         print("Try another?")
         while True:
             ask = input("Please enter yes or no (Y/N): ")
-            ask.lower()
+            ask = ask.lower()
             if ask != "y" and ask != "yes" and ask != "no" and ask != "n":
                 print("Invalid input, please try again")
             else:

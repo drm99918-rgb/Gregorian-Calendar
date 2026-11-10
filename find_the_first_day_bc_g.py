@@ -14,5 +14,6 @@ def find_the_first_day_bc_g(month, year):
         ans -= mon[i + 1]
     if leap_year_bc_g(year) and month > 2:
         ans -= 1
+    ans -= 1
     ans %= 7
-    return ans
+    return (7 - ans) % 7

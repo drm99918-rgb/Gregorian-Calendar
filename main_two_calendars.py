@@ -55,7 +55,7 @@ while True:
         elif d > 1:
             print("In this year, Julian calendar is %d days faster than Gregorian calendar." % d)
         elif d < -1:
-            print("In this year, Gregorian calendar is %d days faster than Julian calendar." % d)
+            print("In this year, Gregorian calendar is %d days faster than Julian calendar." % -d)
     print("Try another?")
     while True:
         ask = input("Please enter yes or no (Y/N): ")

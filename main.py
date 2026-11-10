@@ -1,10 +1,17 @@
 from main_f_g import main_g
 from main_f_j import main_j
 
-print()
+
 while True:
     type_calendar = input("Please enter the type of calendar ('g' for Goregorian Calendar and 'j'for Julian Calendar): ")
     type_calendar.lower()
+    print()
+    if type_calendar == "j" or type_calendar == "julian" or type_calendar == "julian calendar" or type_calendar == "g" or type_calendar == "gregorian" or type_calendar == "gregorian calendar":
+        break
+    else:
+        print("Invalid input, please try again")
+        continue
+while True:
     match type_calendar:
         case "j" | "julian" | "julian calendar":
             main_j()
@@ -34,7 +41,4 @@ while True:
                 continue
             else:
                 break
-        case _:
-            print("Invalid input, please try again")
-            continue
 print("**************Program Ended**************")

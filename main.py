@@ -2,9 +2,9 @@ from main_f_g import main_g
 from main_f_j import main_j
 
 print()
-type_calendar = input("Please enter the type of calendar ('g' for Goregorian Calendar and 'j'for Julian Calendar): ")
-type_calendar.lower()
 while True:
+    type_calendar = input("Please enter the type of calendar ('g' for Goregorian Calendar and 'j'for Julian Calendar): ")
+    type_calendar.lower()
     match type_calendar:
         case "j" | "julian" | "julian calendar":
             main_j()

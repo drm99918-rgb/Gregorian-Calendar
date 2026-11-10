@@ -6,7 +6,7 @@ def main_j():
     print("*******Julian Calendar Calculator********")
     while True:
         try:
-            month, year = map(int, input("Please enter your month and year (M/Y) in numbers: ").split('/'))
+            month, year = map(int, input("Please enter your month and year (M/Y) in numbers (please do not input negative numbers): ").split('/'))
         except ValueError:
             print("Type in positive integers in M/Y form only")
             continue

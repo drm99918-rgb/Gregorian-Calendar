@@ -32,7 +32,7 @@ while True:
         print("*******Julian Calendar Calculator********")
         calendar_output_bc_j(month, year)
     d = day_difference(year)
-    if (leap_year_j(year) and (not leap_year_g(year))) or (leap_year_bc_j(year) and (not leap_year_bc_g(year))):
+    if (leap_year_j(year) and (not leap_year_g(year)) and year > 0) or ((leap_year_bc_j(year) and (not leap_year_bc_g(year)) and year < 0)):
         if d == 0:
             print("In this year, before February, Gregorian calendar is 1 day faster than Julian calendar, but after February, they two are exactly the same.")
         elif d == 1:

@@ -1,7 +1,5 @@
 from leap_year_g import leap_year_g
 from leap_year_j import leap_year_j
-from leap_year_bc_g import leap_year_bc_g
-from leap_year_bc_j import leap_year_bc_j
 
 
 def day_difference(year):

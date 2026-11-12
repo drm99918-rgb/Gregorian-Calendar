@@ -22,14 +22,14 @@ while True:
         print("Please enter a valid year")
         continue
     if year > 0:
-        print("*******Gregorian Calendar Calculator*******")
+        print("***********Gregorian Calendar************")
         calendar_output_g(month, year)
-        print("*******Julian Calendar Calculator********")
+        print("*************Julian Calendar*************")
         calendar_output_j(month, year)
     else:
-        print("*******Gregorian Calendar Calculator*******")
+        print("***********Gregorian Calendar************")
         calendar_output_bc_g(month, year)
-        print("*******Julian Calendar Calculator********")
+        print("*************Julian Calendar*************")
         calendar_output_bc_j(month, year)
     d = day_difference(year)
     if (leap_year_j(year) and (not leap_year_g(year)) and year > 0) or ((leap_year_bc_j(year) and (not leap_year_bc_g(year)) and year < 0)):

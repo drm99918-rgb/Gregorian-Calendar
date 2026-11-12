@@ -4,7 +4,7 @@ from leap_year_j import leap_year_j
 
 def day_difference(year):
     ans = 0
-    if year in range(200, 300):
+    if year in range(200, 300): #from 200AD to 300AD Gregorian and Julian calendars are the same
         return ans
     elif year > 299:
         for i in range(299, year + 1):

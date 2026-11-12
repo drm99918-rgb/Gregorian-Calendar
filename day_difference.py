@@ -9,7 +9,7 @@ def day_difference(year):
     elif year > 299:
         for i in range(299, year + 1):
             if leap_year_j(i) and (not leap_year_g(i)):
-                ans += 1
+                ans += 1 #Julian has a more leap year
     elif year < 200 and year > 0:
         for i in range(year, 201):
             if leap_year_j(i) and (not leap_year_g(i)):

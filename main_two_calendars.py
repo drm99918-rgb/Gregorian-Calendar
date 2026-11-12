@@ -68,4 +68,4 @@ while True:
         continue
     else:
         break
-print("**************Program Ended**************")
+print("***************Program Ended**************")

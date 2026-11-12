@@ -1,6 +1,7 @@
 from leap_year_bc_g import leap_year_bc_g
 
 
+#reference day: 31/12/1BC
 def find_the_first_day_bc_g(month, year):
     year_ = - year
     ans = 0

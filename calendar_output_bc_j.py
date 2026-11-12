@@ -3,7 +3,6 @@ from leap_year_bc_j import leap_year_bc_j
 
 
 
-#reference day: 2/1/1
 def calendar_output_bc_j(month, year):
     mon_name = {1: "Ianuarius", 2: "Februarius", 3: "Martius", 4: "Aprilis", 5: "Maius", 6: "Iunius", 7: "Quintilis", 8: "Sextilis",
                 9: "September", 10: "October", 11: "November", 12: "December"}

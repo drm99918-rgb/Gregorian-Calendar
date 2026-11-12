@@ -2,7 +2,6 @@ from find_the_first_day_bc_g import find_the_first_day_bc_g
 from leap_year_bc_g import leap_year_bc_g
 
 
-#reference day: 31/12/1BC
 def calendar_output_bc_g(month, year):
     mon_name = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August",
                 9: "September", 10: "October", 11: "November", 12: "December"}

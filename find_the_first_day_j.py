@@ -1,6 +1,7 @@
 from leap_year_j import leap_year_j
 
 
+#reference day: 2/1/1
 def find_the_first_day_j(year, month):
     ans = 0
     cnt = 0

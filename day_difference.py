@@ -21,5 +21,5 @@ def day_difference(year):
     elif year < 0:
         for i in range(year + 1, 201):
             if leap_year_j(i) and (not leap_year_g(i)):
-                ans -= 1
+                ans -= 1 #same as the last comment
     return ans

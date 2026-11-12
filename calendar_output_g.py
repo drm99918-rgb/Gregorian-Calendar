@@ -11,7 +11,7 @@ def calendar_output_g(month, year):
     mon = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
     mon_leap = {1: 31, 2: 29, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
     day_list = []
-    if month == 1:
+    if month == 1: #December in last year
         day_list.extend([31 - i for i in range(find_the_first_day_g(month, year))])
         day_list.sort()
         day_list.extend([i + 1 for i in range(mon[month])])

@@ -7,9 +7,10 @@ from leap_year_g import leap_year_g
 from leap_year_j import leap_year_j
 from leap_year_bc_g import leap_year_bc_g
 from leap_year_bc_j import leap_year_bc_j
+#final version for the task
 
 
-while True:
+while True:# while loop logic same as main_f_g.py
     try:
         month, year = map(int, input("Please enter your month and year (M/Y) in numbers (negative integers for BC years) : ").split('/'))
     except ValueError:
@@ -32,7 +33,7 @@ while True:
         print("*************Julian Calendar*************")
         calendar_output_bc_j(month, year)
     d = day_difference(year)
-    if (leap_year_j(year) and (not leap_year_g(year)) and year > 0) or ((leap_year_bc_j(year) and (not leap_year_bc_g(year)) and year < 0)):
+    if (leap_year_j(year) and (not leap_year_g(year)) and year > 0) or ((leap_year_bc_j(year) and (not leap_year_bc_g(year)) and year < 0)): #output day difference based value d
         if d == 0:
             print("In this year, before February, Gregorian calendar is 1 day faster than Julian calendar, but after February, they two are exactly the same.")
         elif d == 1:

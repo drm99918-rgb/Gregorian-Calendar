@@ -2,6 +2,7 @@ from calendar_output_j import calendar_output_j
 from calendar_output_bc_j import calendar_output_bc_j
 
 
+#same logic and comments as file main_f_j.py
 def main_j():
     print()
     print("*******Julian Calendar Calculator********")

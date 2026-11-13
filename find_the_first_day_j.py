@@ -1,7 +1,8 @@
 from leap_year_j import leap_year_j
 
 
-#reference day: 2/1/1
+#same logic refer to file find_the_first_day_g.py
+#reference day: 2/1/1 (same day as 31/12/1BC in g)
 def find_the_first_day_j(year, month):
     ans = 0
     cnt = 0

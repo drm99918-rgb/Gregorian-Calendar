@@ -7,13 +7,13 @@ def main_g():
     while True:
         try:
             month, year = map(int, input("Please enter your month and year (M/Y) in numbers (negative integers for BC years) : ").split('/'))
-        except ValueError:
+        except ValueError: #keep the loop running with invalid input
             print("Type in integers in M/Y form only")
             continue
-        if month < 1 or month > 12:
+        if month < 1 or month > 12: #limit the input month value from 1 to 12
             print("Please enter a valid month")
             continue
-        elif year == 0:
+        elif year == 0: #as 0th year does not exist
             print("Please enter a valid year")
             continue
         if year > 0:
